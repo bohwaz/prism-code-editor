@@ -30,8 +30,6 @@ for (const entry of entries) {
 }
 
 fs.writeFile("dist/themes/index.js", themeMod)
-fs.copyFile("../readme.md", "readme.md")
-fs.copyFile("../LICENSE", "LICENSE")
 
 const dummyModule = `/** Used for autocompletion. This module doesn't have a default export. */
 declare const _: never;
